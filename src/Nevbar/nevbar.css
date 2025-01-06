@@ -1,0 +1,14 @@
+.nev{
+    width:100%;
+    padding: 2px;
+    background-color: darkblue;
+    font-family: cursive;
+
+}
+#logo{
+    font-size: 24px;
+    font-weight: bolder;
+    color: #eaed61;
+    margin-left: 3rem;
+    text-shadow: 2px 1px 1px;
+}

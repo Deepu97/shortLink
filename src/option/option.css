@@ -1,0 +1,18 @@
+.opt{
+    display: flex;
+    justify-content: center;
+    background-color: darkblue;
+}
+#home{
+    margin-right: 14rem;
+    font-size: 40px;
+    background-color: antiquewhite;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+#qr{
+    font-size: 40px;
+    padding: 2rem;
+    background-color: antiquewhite;
+    border-radius: 2rem;
+}
