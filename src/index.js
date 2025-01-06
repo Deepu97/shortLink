@@ -19,7 +19,7 @@ import QrCode from './QRcode/QrCode';
 //   </React.StrictMode>
 // ,root);
 ReactDOM.render(
-<BrowserRouter >
+<BrowserRouter>
 <Routes>
     <Route exact path='/' element={<App/>}/>
     <Route path='/qr' element={<><Nevbar/> <Heading/><Option/><QrCode/></>}/>
@@ -27,7 +27,7 @@ ReactDOM.render(
 </BrowserRouter>
 
 ,document.getElementById('root'));
-
+///hello
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
