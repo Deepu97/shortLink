@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shortLink/static/css/main.bcbb38d9.css",
+    "main.js": "/shortLink/static/js/main.65e00731.js",
+    "index.html": "/shortLink/index.html",
+    "main.bcbb38d9.css.map": "/shortLink/static/css/main.bcbb38d9.css.map",
+    "main.65e00731.js.map": "/shortLink/static/js/main.65e00731.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bcbb38d9.css",
+    "static/js/main.65e00731.js"
+  ]
+}
