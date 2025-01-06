@@ -21,7 +21,7 @@ import QrCode from './QRcode/QrCode';
 ReactDOM.render(
 <BrowserRouter basename='/shortLink'>
 <Routes>
-    <Route exact path='/shortLink/' element={<App/>}/>
+    <Route exact path='/shortLink' element={<App/>}/>
     <Route path='/qr' element={<><Nevbar/> <Heading/><Option/><QrCode/></>}/>
 </Routes>
 </BrowserRouter>
