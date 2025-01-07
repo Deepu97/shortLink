@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import Heading from './Heading/Heading';
 import Nevbar from './Nevbar/Nevbar';
-import{BrowserRouter,Route,Routes} from 'react-router-dom';
+import{HashRouter,Route,Routes} from 'react-router-dom';
 import Option from './option/Option';
 import QrCode from './QRcode/QrCode';
 
@@ -19,12 +19,12 @@ import QrCode from './QRcode/QrCode';
 //   </React.StrictMode>
 // ,root);
 ReactDOM.render(
-<BrowserRouter>
+<HashRouter>
 <Routes>
     <Route exact path='/' element={<App/>}/>
     <Route path='/qr' element={<><Nevbar/> <Heading/><Option/><QrCode/></>}/>
 </Routes>
-</BrowserRouter>
+</HashRouter>
 
 ,document.getElementById('root'));
 ///hello
