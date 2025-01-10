@@ -1,84 +1,133 @@
 body{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+    background-color: darkblue;
 }
 #inp{
-padding: 1rem;
-width:22rem;
-font-size: 22px;
-outline:none;
-font-weight: 300;
-border: 3px solid black;
-border-radius: 10px;
+    padding: 18px;
+    width: 21rem;
+    border-radius: 19px;
 
 }
 #btn{
-    padding: 1.2rem;
-    width:11rem;
+    padding: 12px;
+    outline: none;
+    border-radius: 19px;
     margin-left: 2rem;
-    font-size: 19px;
+    color: slateblue;
     font-weight: bold;
-    box-shadow: 1px 3px 2px 1px black;
-    border-radius: 17px;
-    color:white;
-    border:2px solid black;
-    background-color: rgb(252, 201, 35);
-    /* margin: 1rem; */
+    font-size: 15px;
+    background-color: #d2e37d;
 }
 .shortPortion{
-    height: 31rem;
+   margin-top: 6rem;
+   height: 30rem;
+   
+}
+.media{
     display: flex;
-
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: darkblue
+    
 }
-#urlData{
-    margin-left: 2rem;
-    color: crimson;
+.shrink{
+    display: flex;
+    justify-content: center;
+    overflow-wrap: break-word;
+    margin-top: 2rem;
+    
 }
-.original{
-    color: rgb(255 0 0);
-    background-color: white;
-    padding: 17px;
-    text-shadow: 1px 2px 2px black;
-    border-radius: 1rem;
-}
-.resulturl{
-    margin-top: 5rem;
-}
-#shorturl{
-    color: #4f2fff;
-    background-color: white;
-    border-radius: 1rem;
-    text-shadow: 1px 2px 2px black;
-    padding: 18px;
+.hello{
+    padding: 1rem;
+   width: 50rem;
+   background-color: tomato;
+   border-radius: 1rem;
+
 }
 #result{
-    color:coral;
-    margin-left: 2rem;
+    color: rgb(204, 15, 15);
+    margin-left: 30px;
 }
-#copy{
-    padding: 26px;
-    border-radius: 24px;
-    margin-left: 2rem;
+#urlData{
+    color: rgb(30 74 210);
     font-size: 22px;
-    box-shadow: 4px 4px green
+    font-weight: bolder;
+    
+}
+#danda{
+    color: darkviolet;
 }
 #CopyLinkDi{
     display: flex;
- justify-content: center;
-
- align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+  
+   
 }
-#hello{
-  margin-top: 4rem;
+.short{
+    display: flex;
+   width: 65rem;
+   padding: 1rem;
+   background-color: white;
+   border-radius: 2rem;
+   justify-content: center;
+}
+#copy{
+    padding: 12px;
+    outline: none;
+    border-radius: 19px;
+    margin-left: 2rem;
+    color: slateblue;
+    font-weight: bold;
+    font-size: 15px;
+   box-shadow: 2px 3px 3px;
 }
 #clip{
+    font-size: 15px;
+    background-color: greenyellow;
     color: white;
-    background-color: rgb(0, 255, 21);
-    padding: 7px;
-    margin-left: 1rem;
+    height: 2rem;
+}
+#shorturl{
+    color: rgb(22, 201, 46);
+    font-size: 22px;
+    font-weight: bold;
+}
+@media(max-width:480px){
+    .hello {
+       
+        width: 19rem;
+       
+    }
+    .short {
+        display: flex ;
+        width: 20rem;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #shorturl {
+        color: rgb(22, 201, 46);
+        font-size: 15px;
+        font-weight: bold;
+    }
+    #result {
+        color: rgb(204, 15, 15);
+        margin-left: 30px;
+    }
+    #inp {
+        padding: 17px;
+        width: 21rem;
+        border-radius: 19px;
+    }
+    #btn {
+        padding: 9px;
+        outline: none;
+        border-radius: 19px;
+        margin-left: 1rem;
+        color: slateblue;
+        font-weight: bold;
+        font-size: 15px;
+        background-color: #d2e37d;
+        box-shadow: 3px 2px 2px;
+    }
 }

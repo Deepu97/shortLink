@@ -16,3 +16,14 @@
     background-color: antiquewhite;
     border-radius: 2rem;
 }
+
+@media(max-width:480px) {
+    #home{
+      margin:0;
+      margin-right: 3rem;
+      font-size: 15px;
+    }
+    #qr{
+        font-size: 15px;
+    }
+}

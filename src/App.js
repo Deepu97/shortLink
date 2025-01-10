@@ -17,7 +17,7 @@ function App() {
         const user={
             redirectURL:data1,
         }
-        const data=await fetch("https://shorturl-production-9a71.up.railway.app/user",{
+        const data=await fetch("https://shorturl-web.up.railway.app/user",{
             method:"POST",
             headers:{
                 "Content-type":"application/json",
@@ -41,7 +41,7 @@ function App() {
 ///////////copy to clipboard function
 async function clipboard() {
   try{
-    await navigator.clipboard.writeText(`shorturl-production-9a71.up.railway.app/${res.id}`);
+    await navigator.clipboard.writeText(`shorturl-web.up.railway.app/${res.id}`);
     setCopy("Link copy");
     setShowCopy(true);
     setTimeout(()=>{setCopy("")},1000);
@@ -51,34 +51,47 @@ async function clipboard() {
     console.log(err,"text not copy");
   }
 }
+/// for input data
+function inpData(e){
+  setdata(e.target.value);
+  setShow(false);
+}
  return(
  <>
  <Navbar/>
  <Heading/>
 <Option/>
  <div  className='shortPortion'>
-    <div>
- <input id='inp' type="text" placeholder='Paste your link' onChange={(e)=>setdata(e.target.value)}/>
+    <div className='media'>
+ <input id='inp' type="text" placeholder='Paste your link' onChange={inpData}/>
  <button id='btn' onClick={userData}>Make short url</button>
  </div>
- <div className='resulturl'>
- <h1 className='original'>Original url:<span id='urlData'>{data1}</span></h1>
+
+  <div className='shrink'>
+ <div className='hello'>
+  <p id='urlData'>Original Url : <span id='danda'>{data1}</span></p>
+  </div>
+
+ </div>
  {/* show hide function of short Link  */}
 {
 show?
 <div id='CopyLinkDi'>
+  <div className='short'>
+
+  <p id='shorturl'>your short url is:<span id='result'>{`shorturl-web.up.railway.app/${res.id}`}</span></p>
+
+
+<button id='copy' onClick={clipboard}>Copy Link</button>
   
-  <h1 id='shorturl'>your short url is:<span id='result'>{`shorturl-production-9a71.up.railway.app/${res.id}`}</span></h1>
-
-
-<button id='copy' onClick={clipboard}>copy Link</button>
+  
 {showCopy?<p id='clip'>{copy}</p>:""}
-
+</div>
 
 
 </div>:null
 }
-</div>
+
 </div>
 
  </>
